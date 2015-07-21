@@ -14,7 +14,7 @@
 
   // Use this variable to set up the common and page specific functions. If you
   // rename this variable, you will also need to rename the namespace below.
-  var Sage = {
+  var Laudable = {
     // All pages
     'common': {
       init: function() {
@@ -28,6 +28,12 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
+        // 
+        
+        jQuery(document).ready(function($) {
+          console.log('hello');
+        });
+
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
@@ -46,7 +52,7 @@
   var UTIL = {
     fire: function(func, funcname, args) {
       var fire;
-      var namespace = Sage;
+      var namespace = Laudable;
       funcname = (funcname === undefined) ? 'init' : funcname;
       fire = func !== '';
       fire = fire && namespace[func];

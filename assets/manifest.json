@@ -22,9 +22,11 @@
     },
     "modernizr.js": {
       "bower": ["modernizr"]
+    },"velocity.js": {
+      "bower": ["velocity"]
     }
   },
   "config": {
-    "devUrl": "http://example.dev"
+    "devUrl": "http://laudable.info"
   }
 }
